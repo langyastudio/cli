@@ -1,0 +1,83 @@
+ImageRuntimeVersion: v4.0.30319
+Assembly ExportCLI, Version=1.0.*, Culture=Invariant Language (Invariant Country): 
+	hash=SHA1, flags=PublicKey
+Assembly mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Data, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Assembly System.Xml, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089: 
+	hash=None, flags=None
+Class ExportCLI.StrCls: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    StrOutput(String): PrivateScope, Public, Static, HideBySig
+    StrChange(String&): PrivateScope, Public, Static, HideBySig
+    StrChangeArr(String[]&): PrivateScope, Public, Static, HideBySig
+Class ExportCLI.EnumCls: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    EnumOutput(DataType): PrivateScope, Public, Static, HideBySig
+    EnumChange(DataType&): PrivateScope, Public, Static, HideBySig
+Class ExportCLI.test1: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 iVal : Public
+    SByte cVal : Public
+    Int64 llVal : Public
+  Methods:
+    UnmanagedPtr2ManagedStru(IntPtr): PrivateScope, Public, HideBySig
+Class ExportCLI.test2: AutoLayout, AnsiClass, Class, Public, SequentialLayout, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 iVal : Public
+    SByte cVal : Public
+    Int64 llVal : Public
+  Methods:
+    UnmanagedPtr2ManagedStru(IntPtr): PrivateScope, Public, HideBySig
+Class ExportCLI.test3: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32[] iValArrp : Public
+    Char[] szChArr : Public
+  Methods:
+    UnmanagedPtr2ManagedStru(IntPtr): PrivateScope, Public, HideBySig
+Class ExportCLI.test4: AutoLayout, AnsiClass, Class, Public, ExplicitLayout, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 iValLower : Public
+    Int32 iValUpper : Public
+    Int64 llLocation : Public
+  Methods:
+    UnmanagedPtr2ManagedStru(IntPtr): PrivateScope, Public, HideBySig
+Class ExportCLI.test5: AutoLayout, AnsiClass, Class, Public, Serializable, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Fields:
+    Int32 iVal : Public
+Class ExportCLI.StructCls: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Methods:
+    StructChange(test1&): PrivateScope, Public, Static, HideBySig
+    StructPackN(test2&): PrivateScope, Public, Static, HideBySig
+    StructChangeArr(test3&): PrivateScope, Public, Static, HideBySig
+    StructUnion(test4&): PrivateScope, Public, Static, HideBySig
+    StructStruArr(List`1): PrivateScope, Public, Static, HideBySig
+Class ExportCLI.AddSubCls: AutoLayout, AnsiClass, Class, Public, BeforeFieldInit
+    Void .ctor(): PrivateScope, Public, HideBySig, SpecialName, RTSpecialName
+  Interfaces:
+    System.IDisposable
+  Properties:
+    Int32 Length 'get set' : 
+  Methods:
+    Add(Int32, Int32): PrivateScope, Public, HideBySig
+    Sub(Int32, Int32): PrivateScope, Public, HideBySig
+    get_Length(): PrivateScope, Public, HideBySig, SpecialName
+    set_Length(Int32): PrivateScope, Public, HideBySig, SpecialName
+    Dispose(): PrivateScope, Public, Final, Virtual, HideBySig
+Struct ExportCLI.DataType: AutoLayout, AnsiClass, Class, Public, Sealed, Serializable, BeforeFieldInit
+  :System.Enum
+  Fields:
+    Int32 value__ : Public, SpecialName, RTSpecialName
+    ExportCLI.DataType READ = 0 : Public, Static, Literal, HasDefault
+    ExportCLI.DataType WRITE = 1 : Public, Static, Literal, HasDefault

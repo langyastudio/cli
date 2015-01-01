@@ -1,0 +1,5 @@
+E:\RefCode\C++\Managed\CLI\bin\CSharpDemo.exe
+E:\RefCode\C++\Managed\CLI\bin\CSharpDemo.pdb
+E:\RefCode\C++\Managed\CLI\CSharpDemo\obj\Debug\CSharpDemo.csprojResolveAssemblyReference.cache
+E:\RefCode\C++\Managed\CLI\CSharpDemo\obj\Debug\CSharpDemo.exe
+E:\RefCode\C++\Managed\CLI\CSharpDemo\obj\Debug\CSharpDemo.pdb
