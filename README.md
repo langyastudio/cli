@@ -1,6 +1,6 @@
 Some examples of using C++/CLI ， Implement C# call C++ 
 
-[在线文档](https://langyastudio.blog.csdn.net/article/category/9271302)
+[在线文档](https://blog.csdn.net/aoshilang2249/category_2444285.html)
 
 #### 包含内容
 - signing snk文件强命名
